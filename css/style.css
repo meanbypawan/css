@@ -1,0 +1,77 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;  
+}
+header{
+    height: 42px;
+    background-color: rgb(211, 207, 207);
+    padding-left: 35px;
+}
+.left-menu{
+    width: 30%;
+    float: left;
+}
+.left-menu ul{
+    list-style: none;
+}
+.left-menu ul li{
+    display: inline-block;
+    margin-left: 20px;
+    padding-top: 7px;
+    color: rgb(124, 119, 119);
+    font-weight: 500;
+    font-size: 20px;
+}
+.right-menu{
+    width: 60%;
+    height: 40px;
+   
+    float: right;
+    text-align: end;
+    padding: 3px;
+}
+.right-menu ul{
+    list-style: none;
+    margin-right: 50px;
+}
+.right-menu ul li{
+    display: inline-block;
+    margin-right: 20px;
+    background-color: white;
+    color: black;
+    height: 35px;
+    width: 120px;
+    text-align: center;
+    padding-top: 10px;
+}
+.right-menu ul li ul{
+    display: none;
+}
+.right-menu ul li:hover ul{
+    display: block;
+    color: red;
+    position: absolute;
+    width: 100px;
+    margin-top: 10px;
+}
+/* .right-menu ul li ul li{
+    color: red;
+    background-color: black;
+} */
+.search-logo-bar{
+    height: 100px;
+    border: 1px solid red;
+}
+.logo{
+    width: 20%;
+    border: 1px solid green;
+    float: left;
+    height: 100px;
+}
+.search-input{
+    width: 60%;
+    border: 1px solid blue;
+    float: left;
+    height: 100px;
+}
