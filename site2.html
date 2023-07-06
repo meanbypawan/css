@@ -2,6 +2,7 @@
     <head>
         <title>MultiShop Application</title>
         <link href="css/style.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
     </head>
     <body>
        <header>
@@ -40,9 +41,27 @@
        </header>
        <main>
          <div class="search-logo-bar">
-            <div class="logo"></div>
-            <div class="search-input"></div>
-            <div class="logo"></div>
+            <div class="logo">
+              <div class="logo-text">
+                <label style="background-color: rgb(68, 65, 65); color: rgb(233, 218, 9);">MULTI</label>
+                <label style="background-color: rgb(233, 218, 9); color:rgb(68, 65, 65);">SHOP</label>
+              </div>
+            </div>
+            <div class="search-input">
+                <input type="text" placeholder="Search for products"/>
+                <span  class="fa fa-search search-icon" aria-hidden="true"></span>
+            </div>
+            <div class="logo">
+                <h5 style="margin-top: 15px; font-size:18px">Customer Service</h5>
+                <h2 style="font-size: 30px;">+0123456789</h2>
+            </div>
+         </div>
+         <div class="menues">
+            <div class="category-list">
+                <h1><i class="fa fa-bars" style="margin-right: 15px;" aria-hidden="true"></i>Categories &#9662;</h1>
+            </div>
+            <div class="navbar"></div>
+            <div class="cart-wishlist"></div>
          </div>
        </main>
        <footer></footer> 
