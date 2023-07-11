@@ -3,8 +3,13 @@
         <title>MultiShop Application</title>
         <link href="css/style.css" rel="stylesheet"/>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     </head>
     <body>
+        <script>
+            AOS.init();
+        </script>
        <header>
          <div class="left-menu">
             <ul>
@@ -89,18 +94,29 @@
             </div>
          </div>
          <div class="banner">
-            <div class="banner-left"></div>
+            <div class="banner-left">
+                <h1 data-aos="fade-down" data-aos-duration="1000" data-aos-delay="500">Women Fashion</h1>
+                <p data-aos="zoom-in" style="text-align: center;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quos recusandae expedita alias doloremque, sequi iure commodi velit quas nihil.</p>
+                <button>Shop Now</button>
+            </div>
             <div class="banner-right">
                 <div class="parent-of-sub-banner">
-                  <div style="background-image: url('images/offer-1.jpg');" class="sub-banner first-background"></div>
+                  <h3>Save 20%</h3>
+                  <h1>Special offer</h1>
+                  <div style="background-image: url('images/offer-1.jpg');" class="sub-banner first-background">
+                   
+                  </div>
                 </div>
                 <br/><br/>
                 <div class="parent-of-sub-banner">
+                    <h3>Save 20%</h3>
+                    <h1>Special offer</h1>
                   <div style="background-image: url('images/offer-2.jpg');" class="sub-banner second-background"></div>
                 </div>
             </div>
          </div>
        </main>
        <footer></footer> 
+      
     </body>
 </html>

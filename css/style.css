@@ -225,6 +225,14 @@ input[type="text"]{
     float: left;
     background-image: url('../images/carousel-1.jpg');
     background-size: 100% 400px;
+    opacity: 0.8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 150px;
+    color: white;
+    font-weight: bold;
 }
 .banner-right{
     width: 28%;
@@ -237,6 +245,13 @@ input[type="text"]{
     border: 1px solid rgb(233, 218, 9);
     background-repeat: no-repeat;
     background-size: 100% 180px;
+    opacity: 0.8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bolder;
 }
 .first-background{
     transition: transform 1s ease-in;
@@ -250,4 +265,34 @@ input[type="text"]{
 .parent-of-sub-banner{
     height: 180px;
     overflow: hidden;
+}
+.parent-of-sub-banner h1, .parent-of-sub-banner h3{
+    text-align: center;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 2;
+    margin: 0px;
+    padding:0px;
+    color: white;
+}
+.banner-left h1{
+    font-size: 50px;
+    font-weight: bolder;
+}
+.banner-left button{
+    padding: 10px;
+    border: 1px solid white;
+    font-size: 20px;
+    margin-top: 20px;
+    background-color: transparent;
+    color: white;
+}
+.banner-left button:hover{
+    background-color: white;
+    color: black;
+}
+.sub-banner h4{
+    position: static;
 }
