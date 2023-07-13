@@ -202,8 +202,6 @@ input[type="text"]{
     display: inline-block;
     width: 28px;
     height: 28px;
-    border: 1px solid white;
-    border-radius: 50%;
     text-align: center;
     padding-top: 5px;
     color: white;
@@ -354,4 +352,87 @@ input[type="text"]{
 }
 .cart-footer{
     text-align: center;
+}
+.photo-banner{
+    width: 90%;
+    margin: auto;
+    height: 300px;
+   
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+.photo-left{
+    width: 40%;
+    height: 300px;
+    border: 1px solid black;
+    position: relative;
+    overflow: hidden;
+}
+.photo-left h3, .photo-left h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 5;
+    color: white;
+}
+.photo-left button{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: yellow;
+    border-style: none;
+    z-index: 5;
+    padding: 15px;
+}
+.photo-left-child{
+    background-image: url('../images/offer-1.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 300px;
+    height: 300px;
+    transition: transform 1s ease;
+}
+.photo-left-child:hover{
+    transform: rotate(2deg) scale(1.1);
+}
+.six-box{
+    width: 90%;
+    margin: auto;
+   
+    height: 150px;
+    display: flex;
+    position: relative;
+    margin-top: 50px;
+    justify-content: space-between;
+}
+.child-box{
+    height: 150px;
+    width: 15%;
+   
+}
+.six-box div{
+    background-repeat: no-repeat;
+    background-size: 100% 150px;
+}
+.scroll-up-icon{
+    width: 50px;
+    height: 60px;
+    background-color: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 5%;
+    right: 2%;
+    animation: scroll-animation 2s alternate-reverse infinite;
+}
+@keyframes scroll-animation {
+    from{
+        bottom: 5%;
+    }
+    to{
+        bottom: 7%;
+    }
 }
